@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 main {
     margin: auto;
     font-family: sans-serif;
@@ -35,7 +38,7 @@ li a {
     display: inline-block;
     background: lightgray;
     padding: 1em;
-    width: 94%;
+    width: 100%;
     text-align: center;
 }
 .header-img img{
@@ -91,16 +94,29 @@ footer {
     .header-img {
         margin: 0 1em;
     }
-    #main {
-        width: 50%;
+
+    .main{
+        width: 65%;
     }
     .sub-section {
-        width: 50%;
+        width: 35%;
+        padding-right: 1em;
+        position: relative;
+        top: 6px;
     }
-    section {
+    .parent{
         width: 100%;
         display: flex;
-        border: 1px solid red;
-        flex-basis: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main h2 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+    .main p {
+       padding-left: 1em;
     }
 }
+
