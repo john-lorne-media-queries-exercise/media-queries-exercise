@@ -3,6 +3,7 @@ main {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .hidden-on-desktop {
    text-align: center;
@@ -37,9 +38,25 @@ li a {
     width: 100%;
     text-align: center;
 }
-/*.header-img{*/
-/*}*/
+@media screen and (min-width: 224px) {
+.header-img {
+    width: 100%;
+}
+}
 .main {
     display: flex;
     flex-wrap: wrap;
+}
+.main h2 {
+    margin-bottom: 0;
+}
+.main p {
+    margin: .5em
+}
+.sub-section {
+    font-style: italic;
+}
+footer {
+    display: flex;
+    margin-top: 0;
 }
