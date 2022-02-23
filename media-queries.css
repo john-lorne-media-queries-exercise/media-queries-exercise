@@ -35,14 +35,13 @@ li a {
     display: inline-block;
     background: lightgray;
     padding: 1em;
-    width: 100%;
+    width: 94%;
     text-align: center;
 }
-@media screen and (min-width: 224px) {
-.header-img {
-    width: 100%;
+.header-img img{
+    max-width: 100%;
 }
-}
+
 .main {
     display: flex;
     flex-wrap: wrap;
